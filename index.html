@@ -1,0 +1,1178 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark scroll-smooth">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CT7MS0RQ43"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-CT7MS0RQ43');
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roviro | Engenharia de Software, Sistemas Sob Medida & Automações</title>
+  <meta name="description" content="Portfólio profissional de Jeferson Roviro. Engenharia de software full-stack sob medida, produtos SaaS, automações com WhatsApp e arquitetura de nuvem escalável. Solicite um diagnóstico gratuito.">
+  <meta name="author" content="Jeferson Roviro">
+
+  <!-- Open Graph / Redes Sociais -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://roviro.com.br">
+  <meta property="og:title" content="Roviro | Engenharia de Software & Sistemas Sob Medida">
+  <meta property="og:description" content="Automatize sua operação, elimine tarefas manuais e construa sistemas robustos com engenharia sob medida.">
+  <meta property="og:image" content="https://roviro.com.br/assets/roviro-profile.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="./assets/roviro-profile.png">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              cyan: '#38bdf8',
+              indigo: '#6366f1',
+              blue: '#2563eb',
+              dark: '#080c14',
+              surface: '#0d1322',
+              card: 'rgba(15, 23, 42, 0.65)',
+              border: 'rgba(255, 255, 255, 0.08)'
+            }
+          }
+        }
+      }
+    };
+  </script>
+
+  <!-- Google Fonts: Bricolage Grotesque (Headings) & Plus Jakarta Sans (Body) & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="selection:bg-cyan-500 selection:text-black">
+
+  <!-- Fundo com Grade Tecnológica -->
+  <div class="fixed inset-0 grid-bg pointer-events-none z-0" aria-hidden="true"></div>
+
+  <!-- Header & Barra de Navegação -->
+  <header class="sticky top-0 z-40 bg-[#080c14]/85 backdrop-blur-md border-b border-white/5 transition-all">
+    <div class="max-w-7xl mx-auto px-5 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="#inicio" class="flex items-center gap-3 group" aria-label="Roviro - Página Inicial">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 to-indigo-600 text-white flex items-center justify-center font-black text-xl shadow-lg shadow-cyan-500/25 group-hover:scale-105 transition-transform">
+          R
+        </div>
+        <div>
+          <div class="font-extrabold text-white text-base tracking-wider leading-none">ROVIRO</div>
+          <span class="text-[10px] font-mono text-cyan-400 tracking-widest uppercase">DEV &amp; ARCH</span>
+        </div>
+      </a>
+
+      <!-- Menu Desktop -->
+      <nav class="hidden lg:flex items-center gap-7 text-xs font-semibold text-slate-300" aria-label="Navegação Principal">
+        <a href="#sobre" class="hover:text-cyan-400 transition">Sobre</a>
+        <a href="#problemas" class="hover:text-cyan-400 transition">Gargalos</a>
+        <a href="#servicos" class="hover:text-cyan-400 transition">Serviços</a>
+        <a href="#solucoes" class="hover:text-cyan-400 transition">Sistemas Ativos</a>
+        <a href="#processo" class="hover:text-cyan-400 transition">Como Funciona</a>
+        <a href="#faq" class="hover:text-cyan-400 transition">Dúvidas</a>
+        <a href="#orcamento" class="hover:text-cyan-400 transition">Orçamento</a>
+      </nav>
+
+      <!-- Ações do Topo -->
+      <div class="flex items-center gap-3">
+        <!-- Links Sociais / GitHub & LinkedIn -->
+        <a href="https://github.com/roviro" target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex p-2.5 rounded-xl border border-white/10 hover:border-cyan-500/50 bg-white/5 text-slate-300 hover:text-white transition" title="GitHub de Jeferson Roviro">
+          <i class="fab fa-github text-sm"></i>
+        </a>
+        <a href="https://linkedin.com/in/roviro" target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex p-2.5 rounded-xl border border-white/10 hover:border-cyan-500/50 bg-white/5 text-slate-300 hover:text-white transition" title="LinkedIn de Jeferson Roviro">
+          <i class="fab fa-linkedin-in text-sm"></i>
+        </a>
+        
+        <!-- CTA Principal Orçamento -->
+        <a href="#orcamento" class="btn-brand px-4 py-2.5 rounded-xl text-xs font-bold inline-flex items-center gap-2">
+          <span>Solicitar Proposta</span>
+          <i class="fas fa-arrow-right text-[10px]"></i>
+        </a>
+
+        <!-- Botão Menu Mobile -->
+        <button id="mobileMenuBtn" class="lg:hidden p-2.5 rounded-xl border border-white/10 text-slate-300 hover:text-white" aria-label="Abrir Menu">
+          <i class="fas fa-bars text-sm"></i>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Dropdown Mobile -->
+    <div id="mobileNav" class="hidden lg:hidden bg-[#0d1322] border-b border-white/10 px-5 py-4 space-y-3 text-sm">
+      <a href="#sobre" class="block py-1.5 text-slate-300 hover:text-cyan-400">Sobre Mim</a>
+      <a href="#problemas" class="block py-1.5 text-slate-300 hover:text-cyan-400">Identifique o Gargalo</a>
+      <a href="#servicos" class="block py-1.5 text-slate-300 hover:text-cyan-400">Objetivos &amp; Serviços</a>
+      <a href="#solucoes" class="block py-1.5 text-slate-300 hover:text-cyan-400">Sistemas em Produção</a>
+      <a href="#processo" class="block py-1.5 text-slate-300 hover:text-cyan-400">Processo de Trabalho</a>
+      <a href="#faq" class="block py-1.5 text-slate-300 hover:text-cyan-400">Perguntas Frequentes</a>
+      <a href="#orcamento" class="block py-1.5 text-cyan-400 font-bold">Simular Orçamento &rarr;</a>
+    </div>
+  </header>
+
+  <main id="inicio" class="relative z-10">
+
+    <!-- =========================================================================
+         1. HERO SECTION (Duas Colunas: Copy Persuasivo + Painel de Perfil & Operações)
+         ========================================================================= -->
+    <section class="pt-14 pb-20 border-b border-white/5 relative">
+      <div class="max-w-7xl mx-auto px-5 lg:px-8">
+        <div class="grid lg:grid-cols-[1.15fr_.85fr] gap-12 lg:gap-16 items-center">
+          
+          <!-- Coluna Esquerda: Texto de Impacto & CTAs -->
+          <div class="space-y-6">
+            
+            <!-- Badge de Status -->
+            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-cyan-950/60 border border-cyan-500/30 text-xs text-slate-300">
+              <span class="w-2.5 h-2.5 rounded-full bg-cyan-400 pulse-dot"></span>
+              <span><strong class="text-white font-semibold">Atendimento Ágil</strong> • Diagnóstico Gratuito • Sistemas &amp; SaaS Sob Medida</span>
+            </div>
+
+            <!-- Título Principal (Bricolage Grotesque) -->
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight font-display leading-[1.08] text-white">
+              Automatize sua operação e <span class="text-transparent bg-clip-text bg-gradient-to-r from-white via-cyan-300 to-indigo-400">elimine tarefas manuais</span> com engenharia sob medida.
+            </h1>
+
+            <!-- Subtítulo Estratégico -->
+            <p class="text-base sm:text-lg text-slate-300 leading-relaxed max-w-xl">
+              Olá, sou <strong>Jeferson Roviro</strong>. Engenheiro de software full-stack e arquiteto de soluções. Desenvolvo <strong>sistemas corporativos</strong>, plataformas <strong>SaaS</strong> e automações com <strong>WhatsApp</strong> para empresas que buscam controle real e escala em nuvem.
+            </p>
+
+            <!-- Ações Principais -->
+            <div class="flex flex-col sm:flex-row gap-3 pt-2">
+              <a href="#orcamento" class="btn-brand px-6 py-3.5 rounded-xl font-extrabold text-sm inline-flex items-center justify-center gap-2">
+                <span>Simular Orçamento da sua Ideia</span>
+                <i class="fas fa-chevron-right text-xs"></i>
+              </a>
+              <a href="https://wa.me/5511986531134?text=Ol%C3%A1%20Jeferson%2C%20vim%20pelo%20portf%C3%B3lio%20roviro.com.br%20e%20gostaria%20de%20um%20diagn%C3%B3stico%20para%20minha%20opera%C3%A7%C3%A3o." target="_blank" rel="noopener noreferrer" class="btn-outline px-6 py-3.5 rounded-xl font-bold text-sm inline-flex items-center justify-center gap-2">
+                <i class="fab fa-whatsapp text-emerald-400 text-base"></i>
+                <span>Falar no WhatsApp</span>
+              </a>
+            </div>
+
+            <!-- Microcopy de Confiança -->
+            <p class="text-xs text-slate-400 flex items-center gap-2 pt-1 font-mono">
+              <i class="fas fa-shield-alt text-cyan-400"></i>
+              Você explica o gargalo do seu negócio, avaliamos o cenário e indicamos a arquitetura ideal.
+            </p>
+
+          </div>
+
+          <!-- Coluna Direita: Card Prominente com a FOTO DE JEFERSON ROVIRO + Painel de Operações -->
+          <div class="w-full">
+            <div class="hero-panel-frame max-w-md mx-auto">
+              <div class="glass-card rounded-3xl p-6 sm:p-7 border border-white/10 shadow-2xl relative bg-[#0e1626]/90 backdrop-blur-xl space-y-6">
+                
+                <!-- DESTAQUE DA FOTO DO ENGENHEIRO (JEFERSON ROVIRO) -->
+                <div class="flex items-center gap-4 pb-5 border-b border-white/5">
+                  <div class="relative shrink-0">
+                    <div class="absolute -inset-1 rounded-2xl bg-gradient-to-tr from-cyan-500 to-indigo-600 blur opacity-60"></div>
+                    <img 
+                      src="./assets/roviro-profile.png" 
+                      alt="Foto de Jeferson Roviro" 
+                      class="relative w-20 h-20 sm:w-22 sm:h-22 rounded-2xl object-cover ring-2 ring-cyan-400/60 shadow-xl"
+                      width="88"
+                      height="88"
+                      fetchpriority="high"
+                    >
+                  </div>
+                  <div>
+                    <h2 class="text-xl sm:text-2xl font-black font-display text-white leading-tight">Jeferson Roviro</h2>
+                    <p class="text-xs font-mono text-cyan-400 font-semibold mt-0.5">Software Engineer &amp; Architect</p>
+                    <p class="text-[11px] text-slate-400">São Paulo, Brasil • Remoto Global</p>
+                    <div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-emerald-950/80 border border-emerald-500/40 text-[10px] text-emerald-300 font-mono font-bold mt-2">
+                      <span class="w-2 h-2 rounded-full bg-emerald-400 pulse-dot"></span>
+                      Disponível para Projetos
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Métricas Rápidas 3 Colunas -->
+                <div class="grid grid-cols-3 gap-3">
+                  <div class="bg-black/40 border border-white/5 rounded-2xl p-3 text-center">
+                    <div class="text-xl sm:text-2xl font-black font-display text-cyan-400">+50k</div>
+                    <div class="text-[10px] text-slate-400 font-mono mt-0.5">Msgs WhatsApp</div>
+                  </div>
+                  <div class="bg-black/40 border border-white/5 rounded-2xl p-3 text-center">
+                    <div class="text-xl sm:text-2xl font-black font-display text-white">3 Apps</div>
+                    <div class="text-[10px] text-slate-400 font-mono mt-0.5">Em Nuvem 24/7</div>
+                  </div>
+                  <div class="bg-black/40 border border-white/5 rounded-2xl p-3 text-center">
+                    <div class="text-xl sm:text-2xl font-black font-display text-indigo-400">99.9%</div>
+                    <div class="text-[10px] text-slate-400 font-mono mt-0.5">Uptime Linux</div>
+                  </div>
+                </div>
+
+                <!-- Feed de Status dos Sistemas em Produção -->
+                <div class="space-y-2.5 text-xs">
+                  
+                  <div class="flex items-center justify-between bg-white/[0.03] border border-white/5 rounded-xl px-3.5 py-2.5">
+                    <div class="flex items-center gap-2">
+                      <i class="fas fa-scissors text-blue-400"></i>
+                      <span class="text-slate-200 font-medium">Elite 96 Barbershop</span>
+                    </div>
+                    <span class="px-2 py-0.5 rounded-md bg-blue-500/10 border border-blue-500/30 text-blue-300 text-[10px] font-mono font-bold">
+                      OPERACIONAL
+                    </span>
+                  </div>
+
+                  <div class="flex items-center justify-between bg-white/[0.03] border border-white/5 rounded-xl px-3.5 py-2.5">
+                    <div class="flex items-center gap-2">
+                      <i class="fab fa-whatsapp text-emerald-400"></i>
+                      <span class="text-slate-200 font-medium">Evolution API Gateway</span>
+                    </div>
+                    <span class="px-2 py-0.5 rounded-md bg-emerald-500/10 border border-emerald-500/30 text-emerald-300 text-[10px] font-mono font-bold">
+                      PRODUÇÃO 24/7
+                    </span>
+                  </div>
+
+                  <div class="flex items-center justify-between bg-white/[0.03] border border-white/5 rounded-xl px-3.5 py-2.5">
+                    <div class="flex items-center gap-2">
+                      <i class="fas fa-heart-pulse text-purple-400"></i>
+                      <span class="text-slate-200 font-medium">Jéssica Roviro Psicologia</span>
+                    </div>
+                    <span class="px-2 py-0.5 rounded-md bg-purple-500/10 border border-purple-500/30 text-purple-300 text-[10px] font-mono font-bold">
+                      ONLINE 24/7
+                    </span>
+                  </div>
+
+                  <div class="flex items-center justify-between bg-white/[0.03] border border-white/5 rounded-xl px-3.5 py-2.5">
+                    <div class="flex items-center gap-2">
+                      <i class="fas fa-database text-cyan-400"></i>
+                      <span class="text-slate-200 font-medium">PostgreSQL &amp; Docker Backup</span>
+                    </div>
+                    <span class="px-2 py-0.5 rounded-md bg-cyan-500/10 border border-cyan-500/30 text-cyan-300 text-[10px] font-mono font-bold">
+                      AUTOMATIZADO
+                    </span>
+                  </div>
+
+                </div>
+
+                <!-- Footer do Card com Stack Principal -->
+                <div class="pt-4 border-t border-white/5 flex items-center justify-between text-[11px] text-slate-400">
+                  <span class="font-mono text-cyan-400">React • Node • Postgres • Docker • AWS</span>
+                  <a href="#solucoes" class="text-cyan-400 hover:underline font-semibold">Sistemas &rarr;</a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         2. SEÇÃO: SOBRE MIM (Perfil Profissional com Autoridade de Engenharia)
+         ========================================================================= -->
+    <section id="sobre" class="py-20 border-b border-white/5 bg-[#0a0f1c]">
+      <div class="max-w-7xl mx-auto px-5 lg:px-8">
+        
+        <div class="max-w-2xl mb-12">
+          <div class="flex items-center gap-2 text-xs font-mono font-bold text-cyan-400 uppercase tracking-widest mb-2">
+            <span>// Perfil Profissional</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold font-display text-white">
+            Engenharia pensada para resolver gargalos reais
+          </h2>
+          <p class="text-slate-400 text-sm mt-3">
+            Mais do que escrever código, construo soluções completas focadas na eficiência, segurança e crescimento do seu negócio.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6">
+          
+          <div class="glass-card rounded-2xl p-6 border-cyan-500/20">
+            <div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 grid place-items-center mb-4">
+              <i class="fas fa-layer-group text-lg"></i>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">Full-Stack de Ponta a Ponta</h3>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Domínio completo de arquitetura: modelagem relacional robusta em PostgreSQL, caches rápidos com Redis, APIs escaláveis em Node.js e interfaces modernas em React e TypeScript.
+            </p>
+          </div>
+
+          <div class="glass-card rounded-2xl p-6 border-indigo-500/20">
+            <div class="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/30 text-indigo-400 grid place-items-center mb-4">
+              <i class="fab fa-whatsapp text-lg"></i>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">Automações &amp; WhatsApp</h3>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Especialista em integrar inteligência de mensageria com WhatsApp (Evolution API, Webhooks). Automatize notificações, confirmações de agendamento e alertas operacionais sem esforço manual.
+            </p>
+          </div>
+
+          <div class="glass-card rounded-2xl p-6 border-blue-500/20">
+            <div class="w-12 h-12 rounded-xl bg-blue-500/10 border border-blue-500/30 text-blue-400 grid place-items-center mb-4">
+              <i class="fas fa-cloud text-lg"></i>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">DevOps &amp; Cloud Segura</h3>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Implantação profissional em servidores Linux (AWS Lightsail, EC2, VPS), orquestração com Docker, Nginx como proxy reverso de alta performance, SSL automático e rotinas de backup.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         3. SEÇÃO: IDENTIFIQUE O GARGALO (Problemas Operacionais Reais)
+         ========================================================================= -->
+    <section id="problemas" class="py-20 border-b border-white/5 bg-[#080c14]">
+      <div class="max-w-7xl mx-auto px-5 lg:px-8">
+        
+        <div class="max-w-2xl mb-12">
+          <div class="flex items-center gap-2 text-xs font-mono font-bold text-cyan-400 uppercase tracking-widest mb-2">
+            <span>// Diagnóstico de Gargalos</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold font-display text-white">
+            Sua empresa perde tempo ou dinheiro com algum destes problemas?
+          </h2>
+          <p class="text-slate-400 text-sm mt-3">
+            A maioria das empresas não sofre por falta de esforço, mas por usar ferramentas improvisadas para operações complexas.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+          
+          <!-- Card 1 -->
+          <article class="glass-card rounded-2xl p-6">
+            <div class="w-10 h-10 rounded-xl bg-red-500/10 border border-red-500/20 text-red-400 grid place-items-center mb-4">
+              <i class="fas fa-stopwatch text-base"></i>
+            </div>
+            <h3 class="font-bold text-base text-white mb-2">Processos manuais repetitivos</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Sua equipe perde horas diárias fazendo tarefas mecânicas que um sistema bem arquitetado executaria automaticamente em poucos segundos.
+            </p>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="glass-card rounded-2xl p-6">
+            <div class="w-10 h-10 rounded-xl bg-orange-500/10 border border-orange-500/20 text-orange-400 grid place-items-center mb-4">
+              <i class="fas fa-file-excel text-base"></i>
+            </div>
+            <h3 class="font-bold text-base text-white mb-2">Planilhas fora de controle</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Informações descentralizadas, versões conflitantes de arquivos e o risco constante de perda de dados ou falhas humanas em cálculos críticos.
+            </p>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="glass-card rounded-2xl p-6">
+            <div class="w-10 h-10 rounded-xl bg-blue-500/10 border border-blue-500/20 text-blue-400 grid place-items-center mb-4">
+              <i class="fas fa-link-slash text-base"></i>
+            </div>
+            <h3 class="font-bold text-base text-white mb-2">Sistemas que não conversam</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Necessidade de redigitar a mesma informação em múltiplos sistemas ou no WhatsApp porque suas ferramentas não possuem integração via API.
+            </p>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="glass-card rounded-2xl p-6">
+            <div class="w-10 h-10 rounded-xl bg-yellow-500/10 border border-yellow-500/20 text-yellow-400 grid place-items-center mb-4">
+              <i class="fas fa-chart-pie text-base"></i>
+            </div>
+            <h3 class="font-bold text-base text-white mb-2">Falta de indicadores confiáveis</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Dificuldade de mensurar em tempo real a produtividade da equipe, horas trabalhadas, gargalos de entrega ou o faturamento detalhado.
+            </p>
+          </article>
+
+          <!-- Card 5 -->
+          <article class="glass-card rounded-2xl p-6">
+            <div class="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 grid place-items-center mb-4">
+              <i class="fab fa-whatsapp text-base"></i>
+            </div>
+            <h3 class="font-bold text-base text-white mb-2">Atendimento lento no WhatsApp</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Demora para responder clientes e prestadores, falta de confirmação automatizada de agendamentos e perda de oportunidades comerciais.
+            </p>
+          </article>
+
+          <!-- Card 6 -->
+          <article class="glass-card rounded-2xl p-6">
+            <div class="w-10 h-10 rounded-xl bg-purple-500/10 border border-purple-500/20 text-purple-400 grid place-items-center mb-4">
+              <i class="fas fa-cubes text-base"></i>
+            </div>
+            <h3 class="font-bold text-base text-white mb-2">Sistemas engessados e caros</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Softwares de prateleira que cobram mensalidades abusivas por usuário, mas não se adaptam às regras de negócio específicas da sua operação.
+            </p>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         4. SEÇÃO: OBJETIVOS & SERVIÇOS (Qual é o seu objetivo hoje?)
+         ========================================================================= -->
+    <section id="servicos" class="py-24 border-b border-white/5 bg-[#0a0f1c]">
+      <div class="max-w-7xl mx-auto px-5 lg:px-8">
+        
+        <div class="max-w-2xl mb-14">
+          <div class="flex items-center gap-2 text-xs font-mono font-bold text-cyan-400 uppercase tracking-widest mb-2">
+            <span>// Soluções Planejadas</span>
+          </div>
+          <h2 class="text-3xl sm:text-5xl font-extrabold font-display text-white">
+            Qual é o seu objetivo hoje?
+          </h2>
+          <p class="text-slate-400 text-sm mt-3">
+            A tecnologia certa é dimensionada para o resultado que seu negócio precisa alcançar imediatamente.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-6">
+          
+          <!-- Objetivo 1 -->
+          <article class="glass-card rounded-3xl p-8">
+            <div class="flex items-center gap-4 mb-6">
+              <div class="w-12 h-12 rounded-2xl bg-cyan-500/10 border border-cyan-500/25 text-cyan-400 grid place-items-center">
+                <i class="fas fa-sitemap text-lg"></i>
+              </div>
+              <div>
+                <span class="text-[11px] font-mono text-cyan-400 uppercase tracking-wider">Módulo Operacional</span>
+                <h3 class="text-xl font-bold text-white">Quero organizar minha operação &amp; processos</h3>
+              </div>
+            </div>
+            <ul class="space-y-3 text-xs sm:text-sm text-slate-300 border-t border-white/5 pt-4">
+              <li class="flex items-center gap-2.5">
+                <i class="fas fa-check text-cyan-400 text-xs"></i>
+                <span>Sistemas de Gestão &amp; ERPs sob medida para operações complexas</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i class="fas fa-check text-cyan-400 text-xs"></i>
+                <span>Painéis de controle com níveis de acesso (Admin, Operador, Visualizador)</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i class="fas fa-check text-cyan-400 text-xs"></i>
+                <span>Controle de jornadas, regras de negócio e permissões granulares</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i class="fas fa-check text-cyan-400 text-xs"></i>
+                <span>Exportação para relatórios analíticos em PDF e planilhas</span>
+              </li>
+            </ul>
+          </article>
+
+          <!-- Objetivo 2 -->
+          <article class="glass-card rounded-3xl p-8">
+            <div class="flex items-center gap-4 mb-6">
+              <div class="w-12 h-12 rounded-2xl bg-emerald-500/10 border border-emerald-500/25 text-emerald-400 grid place-items-center">
+                <i class="fab fa-whatsapp text-lg"></i>
+              </div>
+              <div>
+                <span class="text-[11px] font-mono text-emerald-400 uppercase tracking-wider">Automação de Mensageria</span>
+                <h3 class="text-xl font-bold text-white">Quero automatizar processos &amp; WhatsApp</h3>
+              </div>
+            </div>
+            <ul class="space-y-3 text-xs sm:text-sm text-slate-300 border-t border-white/5 pt-4">
+              <li class="flex items-center gap-2.5">
+                <i class="fas fa-check text-emerald-400 text-xs"></i>
+                <span>Disparo automático de notificações, alertas e relatórios via Evolution API</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i class="fas fa-check text-emerald-400 text-xs"></i>
+                <span>Confirmações instantâneas de agendamento e alertas operacionais</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i class="fas fa-check text-emerald-400 text-xs"></i>
+                <span>Webhooks e integrações seguras entre sistemas legados e mensageria</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i class="fas fa-check text-emerald-400 text-xs"></i>
+                <span>Eliminação de mais de 80% do tempo gasto em digitação manual</span>
+              </li>
+            </ul>
+          </article>
+
+          <!-- Objetivo 3 -->
+          <article class="glass-card rounded-3xl p-8">
+            <div class="flex items-center gap-4 mb-6">
+              <div class="w-12 h-12 rounded-2xl bg-indigo-500/10 border border-indigo-500/25 text-indigo-400 grid place-items-center">
+                <i class="fas fa-rocket text-lg"></i>
+              </div>
+              <div>
+                <span class="text-[11px] font-mono text-indigo-400 uppercase tracking-wider">Desenvolvimento de Produto</span>
+                <h3 class="text-xl font-bold text-white">Quero criar meu SaaS ou Produto Digital</h3>
+              </div>
+            </div>
+            <ul class="space-y-3 text-xs sm:text-sm text-slate-300 border-t border-white/5 pt-4">
+              <li class="flex items-center gap-2.5">
+                <i class="fas fa-check text-indigo-400 text-xs"></i>
+                <span>Desenvolvimento Full-Stack do zero ao deploy: React, Node.js e TypeScript</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i class="fas fa-check text-indigo-400 text-xs"></i>
+                <span>Bancos de dados relacionais robustos em PostgreSQL e cache com Redis</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i class="fas fa-check text-indigo-400 text-xs"></i>
+                <span>Modelagem Multi-Tenant para atender múltiplos clientes na mesma plataforma</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i class="fas fa-check text-indigo-400 text-xs"></i>
+                <span>Checkout, planos de assinatura e autenticação com JWT e MFA</span>
+              </li>
+            </ul>
+          </article>
+
+          <!-- Objetivo 4 -->
+          <article class="glass-card rounded-3xl p-8">
+            <div class="flex items-center gap-4 mb-6">
+              <div class="w-12 h-12 rounded-2xl bg-blue-500/10 border border-blue-500/25 text-blue-400 grid place-items-center">
+                <i class="fas fa-server text-lg"></i>
+              </div>
+              <div>
+                <span class="text-[11px] font-mono text-blue-400 uppercase tracking-wider">DevOps &amp; Infraestrutura</span>
+                <h3 class="text-xl font-bold text-white">Quero estabilidade em Nuvem &amp; DevOps</h3>
+              </div>
+            </div>
+            <ul class="space-y-3 text-xs sm:text-sm text-slate-300 border-t border-white/5 pt-4">
+              <li class="flex items-center gap-2.5">
+                <i class="fas fa-check text-blue-400 text-xs"></i>
+                <span>Deploy em servidores Linux na nuvem (AWS Lightsail, EC2, VPS)</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i class="fas fa-check text-blue-400 text-xs"></i>
+                <span>Conteinerização com Docker e Nginx como Reverse Proxy de alta velocidade</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i class="fas fa-check text-blue-400 text-xs"></i>
+                <span>Certificados SSL/TLS automáticos, segurança de portas e firewall</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i class="fas fa-check text-blue-400 text-xs"></i>
+                <span>Rotinas de backup automatizadas e monitoramento contínuo de uptime</span>
+              </li>
+            </ul>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         5. SEÇÃO: SISTEMAS EM PRODUÇÃO (Catálogo com Accordion: Solução + Resultado)
+         ========================================================================= -->
+    <section id="solucoes" class="py-24 border-b border-white/5 bg-[#080c14]">
+      <div class="max-w-7xl mx-auto px-5 lg:px-8">
+        
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-14 gap-6">
+          <div class="max-w-2xl">
+            <div class="flex items-center gap-2 text-xs font-mono font-bold text-cyan-400 uppercase tracking-widest mb-2">
+              <span>// Portfólio de Aplicações Reais</span>
+            </div>
+            <h2 class="text-3xl sm:text-5xl font-extrabold font-display text-white">
+              Sistemas em Produção
+            </h2>
+            <p class="text-slate-400 text-sm mt-3">
+              Não mostro apenas protótipos de tela. Conheça aplicações completas, hospedadas em nuvem, com banco de dados real e operação contínua.
+            </p>
+          </div>
+          <div class="text-xs font-mono text-cyan-400 border border-cyan-500/30 rounded-xl px-3.5 py-2 bg-cyan-950/40">
+            ✓ Todos os links abaixo estão ativos online
+          </div>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          
+          <!-- PROJETO 1: ELITE 96 BARBERSHOP -->
+          <article class="glass-card rounded-3xl p-7 flex flex-col justify-between border-cyan-500/20">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <div class="w-12 h-12 rounded-2xl bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 grid place-items-center">
+                  <i class="fas fa-scissors text-lg"></i>
+                </div>
+                <span class="px-2.5 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-300 font-mono text-[11px] font-bold">
+                  SaaS &amp; Agendamento
+                </span>
+              </div>
+
+              <h3 class="text-2xl font-bold font-display text-white mb-2">
+                Elite 96 Barbershop | Gestão &amp; Agendamentos
+              </h3>
+              
+              <p class="text-xs sm:text-sm text-slate-300 leading-relaxed mb-4">
+                Plataforma web moderna que combina agendamento online self-service 24/7 para clientes, controle de grade dos profissionais e painel de faturamento com cálculo de comissões em tempo real.
+              </p>
+
+              <!-- Tags Técnicas -->
+              <div class="flex flex-wrap gap-1.5 mb-5 font-mono text-[11px]">
+                <span class="px-2 py-0.5 rounded bg-black/40 border border-white/10 text-slate-300">React PWA</span>
+                <span class="px-2 py-0.5 rounded bg-black/40 border border-white/10 text-slate-300">Node API</span>
+                <span class="px-2 py-0.5 rounded bg-black/40 border border-white/10 text-slate-300">Agenda Real-time</span>
+                <span class="px-2 py-0.5 rounded bg-black/40 border border-white/10 text-slate-300">AWS Lightsail</span>
+              </div>
+
+              <!-- Accordion de Detalhes Técnicos -->
+              <details class="group border-t border-white/10 pt-3">
+                <summary class="flex items-center justify-between text-xs font-bold text-cyan-400 hover:text-cyan-300 cursor-pointer py-1">
+                  <span>Ver arquitetura detalhada &amp; resultados</span>
+                  <i class="fas fa-chevron-down text-[10px] group-open:rotate-180 transition-transform"></i>
+                </summary>
+                
+                <div class="pt-4 space-y-4 text-xs">
+                  <div class="bg-black/40 rounded-xl p-3.5 border border-white/5">
+                    <div class="font-mono text-cyan-400 font-bold uppercase text-[10px] mb-1">A Solução</div>
+                    <p class="text-slate-300 leading-relaxed">
+                      Aplicação web responsiva com experiência fluida de app. O cliente escolhe barbeiro, serviço e horário disponível com bloqueio automático contra conflitos. O barbeiro gerencia sua fila do dia direto pelo smartphone.
+                    </p>
+                  </div>
+                  <div class="bg-black/40 rounded-xl p-3.5 border border-white/5">
+                    <div class="font-mono text-emerald-400 font-bold uppercase text-[10px] mb-1">O Resultado</div>
+                    <p class="text-slate-300 leading-relaxed">
+                      Fim das mensagens perdidas no WhatsApp, zero conflito de horários e queda de <strong>60% nas faltas (no-shows)</strong> com lembretes automáticos. O proprietário ganhou previsibilidade financeira total.
+                    </p>
+                  </div>
+                </div>
+              </details>
+            </div>
+
+            <!-- Botões de Ação -->
+            <div class="mt-6 pt-4 border-t border-white/5">
+              <a href="https://elite96.roviro.com.br" target="_blank" rel="noopener noreferrer" class="btn-brand px-4 py-2.5 rounded-xl text-center text-xs font-bold w-full inline-flex items-center justify-center gap-2">
+                <span>Acessar Plataforma Online</span>
+                <i class="fas fa-external-link-alt text-[10px]"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- PROJETO 2: EVOLUTION API GATEWAY -->
+          <article class="glass-card rounded-3xl p-7 flex flex-col justify-between border-indigo-500/20">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <div class="w-12 h-12 rounded-2xl bg-indigo-500/10 border border-indigo-500/30 text-indigo-400 grid place-items-center">
+                  <i class="fab fa-whatsapp text-lg"></i>
+                </div>
+                <span class="px-2.5 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/30 text-indigo-300 font-mono text-[11px] font-bold">
+                  Infra &amp; Mensageria
+                </span>
+              </div>
+
+              <h3 class="text-2xl font-bold font-display text-white mb-2">
+                Evolution API Gateway | Hub WhatsApp Corporativo
+              </h3>
+              
+              <p class="text-xs sm:text-sm text-slate-300 leading-relaxed mb-4">
+                Infraestrutura dedicada de API para WhatsApp com suporte a múltiplas instâncias isoladas, webhooks seguros, fila assíncrona de mensagens e alta disponibilidade para produtos e clientes.
+              </p>
+
+              <!-- Tags Técnicas -->
+              <div class="flex flex-wrap gap-1.5 mb-5 font-mono text-[11px]">
+                <span class="px-2 py-0.5 rounded bg-black/40 border border-white/10 text-slate-300">Docker Engine</span>
+                <span class="px-2 py-0.5 rounded bg-black/40 border border-white/10 text-slate-300">Evolution v2</span>
+                <span class="px-2 py-0.5 rounded bg-black/40 border border-white/10 text-slate-300">Webhooks</span>
+                <span class="px-2 py-0.5 rounded bg-black/40 border border-white/10 text-slate-300">SSL Automático</span>
+              </div>
+
+              <!-- Accordion de Detalhes Técnicos -->
+              <details class="group border-t border-white/10 pt-3">
+                <summary class="flex items-center justify-between text-xs font-bold text-indigo-400 hover:text-indigo-300 cursor-pointer py-1">
+                  <span>Ver arquitetura detalhada &amp; resultados</span>
+                  <i class="fas fa-chevron-down text-[10px] group-open:rotate-180 transition-transform"></i>
+                </summary>
+                
+                <div class="pt-4 space-y-4 text-xs">
+                  <div class="bg-black/40 rounded-xl p-3.5 border border-white/5">
+                    <div class="font-mono text-indigo-400 font-bold uppercase text-[10px] mb-1">A Solução</div>
+                    <p class="text-slate-300 leading-relaxed">
+                      Gateway hospedado em cluster Docker com proxy reverso Nginx e rate limiting configurado. Fornece endpoints REST para que qualquer aplicação web envie mensagens de texto, mídias e receba confirmações de leitura em tempo real.
+                    </p>
+                  </div>
+                  <div class="bg-black/40 rounded-xl p-3.5 border border-white/5">
+                    <div class="font-mono text-cyan-400 font-bold uppercase text-[10px] mb-1">O Resultado</div>
+                    <p class="text-slate-300 leading-relaxed">
+                      Mais de <strong>50.000 mensagens entregues</strong> com 99.9% de uptime e custo de infraestrutura até 90% menor comparado a APIs oficiais de brokers convencionais.
+                    </p>
+                  </div>
+                </div>
+              </details>
+            </div>
+
+            <!-- Botões de Ação -->
+            <div class="mt-6 pt-4 border-t border-white/5">
+              <a href="https://api.roviro.com.br" target="_blank" rel="noopener noreferrer" class="btn-brand px-4 py-2.5 rounded-xl text-center text-xs font-bold w-full inline-flex items-center justify-center gap-2">
+                <span>Visualizar Gateway em Nuvem</span>
+                <i class="fas fa-external-link-alt text-[10px]"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- PROJETO 3: JÉSSICA ROVIRO PSICOLOGIA -->
+          <article class="glass-card rounded-3xl p-7 flex flex-col justify-between border-purple-500/20">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <div class="w-12 h-12 rounded-2xl bg-purple-500/10 border border-purple-500/30 text-purple-400 grid place-items-center">
+                  <i class="fas fa-heart-pulse text-lg"></i>
+                </div>
+                <span class="px-2.5 py-1 rounded-full bg-purple-500/10 border border-purple-500/30 text-purple-300 font-mono text-[11px] font-bold">
+                  Saúde &amp; Captação de Pacientes
+                </span>
+              </div>
+
+              <h3 class="text-2xl font-bold font-display text-white mb-2">
+                Jéssica Roviro | Psicologia Clínica Online
+              </h3>
+              
+              <p class="text-xs sm:text-sm text-slate-300 leading-relaxed mb-4">
+                Portal institucional de alta conversão para consultório de psicologia, projetado com arquitetura visual acolhedora, autoridade profissional e fluxo de agendamento confidencial via WhatsApp.
+              </p>
+
+              <!-- Tags Técnicas -->
+              <div class="flex flex-wrap gap-1.5 mb-5 font-mono text-[11px]">
+                <span class="px-2 py-0.5 rounded bg-black/40 border border-white/10 text-slate-300">Next-gen UI</span>
+                <span class="px-2 py-0.5 rounded bg-black/40 border border-white/10 text-slate-300">SEO Técnico</span>
+                <span class="px-2 py-0.5 rounded bg-black/40 border border-white/10 text-slate-300">Alta Conversão</span>
+                <span class="px-2 py-0.5 rounded bg-black/40 border border-white/10 text-slate-300">Score 100 CWV</span>
+              </div>
+
+              <!-- Accordion de Detalhes Técnicos -->
+              <details class="group border-t border-white/10 pt-3">
+                <summary class="flex items-center justify-between text-xs font-bold text-purple-400 hover:text-purple-300 cursor-pointer py-1">
+                  <span>Ver arquitetura detalhada &amp; resultados</span>
+                  <i class="fas fa-chevron-down text-[10px] group-open:rotate-180 transition-transform"></i>
+                </summary>
+                
+                <div class="pt-4 space-y-4 text-xs">
+                  <div class="bg-black/40 rounded-xl p-3.5 border border-white/5">
+                    <div class="font-mono text-purple-400 font-bold uppercase text-[10px] mb-1">A Solução</div>
+                    <p class="text-slate-300 leading-relaxed">
+                      Estrutura focada em velocidade de carregamento mobile, acessibilidade (WCAG) e clareza sobre abordagens terapêuticas. O funil conduz o paciente diretamente a um canal seguro de triagem.
+                    </p>
+                  </div>
+                  <div class="bg-black/40 rounded-xl p-3.5 border border-white/5">
+                    <div class="font-mono text-cyan-400 font-bold uppercase text-[10px] mb-1">O Resultado</div>
+                    <p class="text-slate-300 leading-relaxed">
+                      Triplicação no volume de contatos orgânicos para sessões de terapia online e presencial, com posicionamento de destaque nas buscas locais do Google.
+                    </p>
+                  </div>
+                </div>
+              </details>
+            </div>
+
+            <!-- Botões de Ação -->
+            <div class="mt-6 pt-4 border-t border-white/5">
+              <a href="https://jessica.roviro.com.br" target="_blank" rel="noopener noreferrer" class="btn-brand px-4 py-2.5 rounded-xl text-center text-xs font-bold w-full inline-flex items-center justify-center gap-2">
+                <span>Visualizar Portal Online</span>
+                <i class="fas fa-external-link-alt text-[10px]"></i>
+              </a>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         6. SEÇÃO: COMO FUNCIONA (Processo em 4 Passos com Linha Conectora)
+         ========================================================================= -->
+    <section id="processo" class="py-24 border-b border-white/5 bg-[#0a0f1c]">
+      <div class="max-w-7xl mx-auto px-5 lg:px-8">
+        
+        <div class="max-w-2xl mb-16">
+          <div class="flex items-center gap-2 text-xs font-mono font-bold text-cyan-400 uppercase tracking-widest mb-2">
+            <span>// Metodologia de Engenharia</span>
+          </div>
+          <h2 class="text-3xl sm:text-5xl font-extrabold font-display text-white">
+            Processo ágil e focado em resultado
+          </h2>
+          <p class="text-slate-400 text-sm mt-3">
+            Não apenas escrevo código: resolvo gargalos reais da sua empresa com prazos e escopos claros.
+          </p>
+        </div>
+
+        <div class="relative grid md:grid-cols-4 gap-6">
+          <!-- Linha Conectora Tracejada (Desktop) -->
+          <div class="step-line hidden md:block"></div>
+
+          <!-- Passo 01 -->
+          <div class="glass-card rounded-3xl p-6 relative">
+            <div class="w-12 h-12 rounded-2xl bg-gradient-to-tr from-cyan-500 to-indigo-600 text-white font-display font-extrabold text-xl grid place-items-center mb-5 shadow-lg shadow-cyan-500/20">
+              01
+            </div>
+            <h3 class="font-bold text-lg text-white mb-2">Diagnóstico Técnico</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Mapeamos seu processo atual para entender onde estão os atrasos, riscos de perda de dados e gargalos de produtividade.
+            </p>
+          </div>
+
+          <!-- Passo 02 -->
+          <div class="glass-card rounded-3xl p-6 relative">
+            <div class="w-12 h-12 rounded-2xl bg-[#0f172a] border border-cyan-500/40 text-cyan-400 font-display font-extrabold text-xl grid place-items-center mb-5">
+              02
+            </div>
+            <h3 class="font-bold text-lg text-white mb-2">Arquitetura &amp; Proposta</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Apresentamos o plano técnico: tecnologias ideais, escopo detalhado, cronograma de entregas e proposta comercial sem surpresas.
+            </p>
+          </div>
+
+          <!-- Passo 03 -->
+          <div class="glass-card rounded-3xl p-6 relative">
+            <div class="w-12 h-12 rounded-2xl bg-[#0f172a] border border-indigo-500/40 text-indigo-400 font-display font-extrabold text-xl grid place-items-center mb-5">
+              03
+            </div>
+            <h3 class="font-bold text-lg text-white mb-2">Construção em Sprints</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Desenvolvimento em ciclos curtos com código testado, documentado e demonstrações contínuas para validação da sua equipe.
+            </p>
+          </div>
+
+          <!-- Passo 04 -->
+          <div class="glass-card rounded-3xl p-6 relative">
+            <div class="w-12 h-12 rounded-2xl bg-[#0f172a] border border-blue-500/40 text-blue-300 font-display font-extrabold text-xl grid place-items-center mb-5">
+              04
+            </div>
+            <h3 class="font-bold text-lg text-white mb-2">Deploy &amp; Suporte</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Subida oficial em servidores de nuvem de alta segurança, treinamento operacional e acompanhamento contínuo da estabilidade.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         7. SEÇÃO: DÚVIDAS FREQUENTES (FAQ Accordion)
+         ========================================================================= -->
+    <section id="faq" class="py-24 border-b border-white/5 bg-[#080c14]">
+      <div class="max-w-4xl mx-auto px-5 lg:px-8">
+        
+        <div class="text-center max-w-2xl mx-auto mb-14">
+          <div class="inline-flex items-center gap-2 text-xs font-mono font-bold text-cyan-400 uppercase tracking-widest mb-2">
+            <span>// Respostas Claras</span>
+          </div>
+          <h2 class="text-3xl sm:text-5xl font-extrabold font-display text-white">
+            Perguntas Frequentes
+          </h2>
+          <p class="text-slate-400 text-sm mt-3">
+            Tudo o que você precisa saber antes de iniciarmos um projeto juntos.
+          </p>
+        </div>
+
+        <div class="space-y-4">
+          
+          <details class="glass-card rounded-2xl group">
+            <summary class="flex justify-between items-center font-bold text-sm sm:text-base text-white cursor-pointer p-6 hover:text-cyan-400 transition">
+              <span>Quanto custa desenvolver um sistema sob medida ou automação?</span>
+              <span class="text-cyan-400 group-open:rotate-180 transition-transform"><i class="fas fa-chevron-down"></i></span>
+            </summary>
+            <div class="text-xs sm:text-sm text-slate-300 px-6 pb-6 border-t border-white/5 pt-3 leading-relaxed">
+              O investimento varia de acordo com a complexidade da regra de negócio, quantidade de telas e integrações necessárias (banco de dados, WhatsApp, APIs de terceiros). Por isso, realizamos primeiro o diagnóstico gratuito para apresentar um orçamento transparente e sem taxas ocultas.
+            </div>
+          </details>
+
+          <details class="glass-card rounded-2xl group">
+            <summary class="flex justify-between items-center font-bold text-sm sm:text-base text-white cursor-pointer p-6 hover:text-cyan-400 transition">
+              <span>É possível integrar com os sistemas e planilhas que já utilizamos?</span>
+              <span class="text-cyan-400 group-open:rotate-180 transition-transform"><i class="fas fa-chevron-down"></i></span>
+            </summary>
+            <div class="text-xs sm:text-sm text-slate-300 px-6 pb-6 border-t border-white/5 pt-3 leading-relaxed">
+              Sim! Grande parte da nossa especialidade é construir pontes entre sistemas legados, ERPs, planilhas Excel/Google Sheets e o WhatsApp. Criamos automações para que os dados fluam sem você precisar digitar a mesma coisa em dois lugares.
+            </div>
+          </details>
+
+          <details class="glass-card rounded-2xl group">
+            <summary class="flex justify-between items-center font-bold text-sm sm:text-base text-white cursor-pointer p-6 hover:text-cyan-400 transition">
+              <span>Vocês fornecem suporte e manutenção contínua após o lançamento?</span>
+              <span class="text-cyan-400 group-open:rotate-180 transition-transform"><i class="fas fa-chevron-down"></i></span>
+            </summary>
+            <div class="text-xs sm:text-sm text-slate-300 px-6 pb-6 border-t border-white/5 pt-3 leading-relaxed">
+              Com certeza. Nenhum software corporativo deve ficar desamparado. Oferecemos planos de suporte contínuo, monitoramento de servidores na AWS, backups de bancos de dados e implementação de novas funcionalidades conforme sua empresa cresce e expande.
+            </div>
+          </details>
+
+          <details class="glass-card rounded-2xl group">
+            <summary class="flex justify-between items-center font-bold text-sm sm:text-base text-white cursor-pointer p-6 hover:text-cyan-400 transition">
+              <span>Como funciona a contratação (Projeto Fechado vs. Consultoria PJ)?</span>
+              <span class="text-cyan-400 group-open:rotate-180 transition-transform"><i class="fas fa-chevron-down"></i></span>
+            </summary>
+            <div class="text-xs sm:text-sm text-slate-300 px-6 pb-6 border-t border-white/5 pt-3 leading-relaxed">
+              Atuamos nos dois modelos: tanto em <strong>Projeto Fechado</strong> (com escopo, prazo e preço pré-definidos) quanto em <strong>Alocação / Consultoria PJ Contínua</strong> para empresas de tecnologia que precisam de um Engenheiro Full-Stack Sênior para liderar arquitetura ou acelerar entregas.
+            </div>
+          </details>
+
+          <details class="glass-card rounded-2xl group">
+            <summary class="flex justify-between items-center font-bold text-sm sm:text-base text-white cursor-pointer p-6 hover:text-cyan-400 transition">
+              <span>O atendimento e a implantação podem ser feitos 100% remotamente?</span>
+              <span class="text-cyan-400 group-open:rotate-180 transition-transform"><i class="fas fa-chevron-down"></i></span>
+            </summary>
+            <div class="text-xs sm:text-sm text-slate-300 px-6 pb-6 border-t border-white/5 pt-3 leading-relaxed">
+              Sim. Atendemos clientes de qualquer região do Brasil ou exterior com alinhamentos via Google Meet, documentação assíncrona e homologação em ambientes de teste na nuvem.
+            </div>
+          </details>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         8. SEÇÃO: CALCULADORA & BRIEFING INTERATIVO DE ORÇAMENTO
+         ========================================================================= -->
+    <section class="py-24 border-b border-white/5 bg-[#0a0f1c]" id="orcamento">
+      <div class="max-w-7xl mx-auto px-5 lg:px-8">
+        
+        <div class="glass-card rounded-3xl p-8 sm:p-12 border border-cyan-500/20 bg-[#0e1626]/90 relative overflow-hidden">
+          
+          <div class="max-w-2xl mb-10">
+            <div class="flex items-center gap-2 text-xs font-mono font-bold text-cyan-400 uppercase tracking-widest mb-2">
+              <span>// Calculadora &amp; Briefing</span>
+            </div>
+            <h2 class="text-3xl sm:text-4xl font-extrabold font-display text-white">
+              Tem uma ideia de sistema ou aplicação?
+            </h2>
+            <p class="text-slate-300 text-sm mt-2">
+              Monte seu escopo inicial abaixo para receber uma estimativa rápida e profissional sem compromisso.
+            </p>
+          </div>
+
+          <form id="budgetForm" class="space-y-8" onsubmit="return false;">
+            
+            <!-- Passo 1: Tipo de Projeto -->
+            <div>
+              <label class="block text-sm font-bold text-white mb-3">
+                <span class="inline-block w-6 h-6 rounded-full bg-cyan-400 text-black text-center text-xs font-extrabold leading-6 mr-1.5">1</span>
+                Qual é o tipo da sua aplicação ou sistema?
+              </label>
+              
+              <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-3" id="projectTypeGrid">
+                <button type="button" class="option-card active text-left p-4 rounded-2xl bg-black/40 border border-white/10 hover:border-cyan-400/50 transition flex flex-col justify-between" data-type="Sistema de Gestão Interna (ERP / Operacional)">
+                  <span class="text-2xl mb-2">⚙️</span>
+                  <div>
+                    <span class="block font-bold text-white text-xs sm:text-sm">Sistema de Gestão / ERP</span>
+                    <span class="block text-[11px] text-slate-400 mt-1">Controle operacional, cadastros, fluxo de trabalho e painel administrativo</span>
+                  </div>
+                </button>
+
+                <button type="button" class="option-card text-left p-4 rounded-2xl bg-black/40 border border-white/10 hover:border-cyan-400/50 transition flex flex-col justify-between" data-type="Aplicação Web / SaaS Completo">
+                  <span class="text-2xl mb-2">💻</span>
+                  <div>
+                    <span class="block font-bold text-white text-xs sm:text-sm">Aplicação Web / SaaS</span>
+                    <span class="block text-[11px] text-slate-400 mt-1">Plataforma interativa para seus clientes ou assinantes</span>
+                  </div>
+                </button>
+
+                <button type="button" class="option-card text-left p-4 rounded-2xl bg-black/40 border border-white/10 hover:border-cyan-400/50 transition flex flex-col justify-between" data-type="Automação com WhatsApp &amp; Mensageria">
+                  <span class="text-2xl mb-2">💬</span>
+                  <div>
+                    <span class="block font-bold text-white text-xs sm:text-sm">Automação WhatsApp</span>
+                    <span class="block text-[11px] text-slate-400 mt-1">Disparos de alertas, agendamentos e robôs com Evolution API</span>
+                  </div>
+                </button>
+
+                <button type="button" class="option-card text-left p-4 rounded-2xl bg-black/40 border border-white/10 hover:border-cyan-400/50 transition flex flex-col justify-between" data-type="Landing Page de Alta Conversão">
+                  <span class="text-2xl mb-2">🚀</span>
+                  <div>
+                    <span class="block font-bold text-white text-xs sm:text-sm">Landing Page / Portal</span>
+                    <span class="block text-[11px] text-slate-400 mt-1">Página moderna focada em atrair e converter clientes</span>
+                  </div>
+                </button>
+              </div>
+            </div>
+
+            <!-- Passo 2: Recursos Desejados (Chips Múltiplos) -->
+            <div>
+              <label class="block text-sm font-bold text-white mb-3">
+                <span class="inline-block w-6 h-6 rounded-full bg-cyan-400 text-black text-center text-xs font-extrabold leading-6 mr-1.5">2</span>
+                Quais funcionalidades você precisa incluir?
+              </label>
+              
+              <div class="flex flex-wrap gap-2" id="featuresChips">
+                <button type="button" class="chip active px-3.5 py-2 rounded-xl text-xs font-mono font-medium transition" data-feature="Login &amp; Controle de Permissões">
+                  ✓ Login &amp; Usuários
+                </button>
+                <button type="button" class="chip active px-3.5 py-2 rounded-xl text-xs font-mono font-medium transition" data-feature="Notificações Automáticas no WhatsApp">
+                  ✓ Notificações WhatsApp
+                </button>
+                <button type="button" class="chip px-3.5 py-2 rounded-xl text-xs font-mono font-medium transition" data-feature="Painel com Relatórios e Gráficos (Dashboard)">
+                  + Painel / Dashboard
+                </button>
+                <button type="button" class="chip px-3.5 py-2 rounded-xl text-xs font-mono font-medium transition" data-feature="Agendamento Online de Horários">
+                  + Agendamento Online
+                </button>
+                <button type="button" class="chip px-3.5 py-2 rounded-xl text-xs font-mono font-medium transition" data-feature="Controle Financeiro / Fluxo de Caixa">
+                  + Gestão Financeira
+                </button>
+                <button type="button" class="chip px-3.5 py-2 rounded-xl text-xs font-mono font-medium transition" data-feature="Gestão de Estoque e Produtos">
+                  + Estoque &amp; Produtos
+                </button>
+                <button type="button" class="chip px-3.5 py-2 rounded-xl text-xs font-mono font-medium transition" data-feature="Integração com Gateway de Pagamento (PIX/Cartão)">
+                  + Pagamentos Online (PIX)
+                </button>
+                <button type="button" class="chip px-3.5 py-2 rounded-xl text-xs font-mono font-medium transition" data-feature="Hospedagem Cloud &amp; Domínio Próprio">
+                  + Hospedagem &amp; Domínio
+                </button>
+              </div>
+            </div>
+
+            <!-- Passo 3: Descrição e Prazo -->
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div>
+                <label for="projectDeadline" class="block text-xs font-bold text-white mb-2">
+                  <span class="inline-block w-5 h-5 rounded-full bg-cyan-400 text-black text-center text-[10px] font-extrabold leading-5 mr-1">3</span>
+                  Prazo estimado desejado:
+                </label>
+                <select id="projectDeadline" class="w-full bg-[#080c14] border border-white/10 rounded-xl px-4 py-3 text-xs text-white focus:outline-none focus:border-cyan-400">
+                  <option value="Flexível / Sem urgência imediata">Flexível / A combinar</option>
+                  <option value="Urgente (Em até 15 dias)">Urgente (Em até 15 dias)</option>
+                  <option value="Normal (30 a 45 dias)">Normal (30 a 45 dias)</option>
+                  <option value="Projeto de Médio/Longo Prazo">Médio/Longo Prazo (Mais de 60 dias)</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="projectDetails" class="block text-xs font-bold text-white mb-2">
+                  <span class="inline-block w-5 h-5 rounded-full bg-cyan-400 text-black text-center text-[10px] font-extrabold leading-5 mr-1">4</span>
+                  Descreva brevemente sua ideia ou desafio:
+                </label>
+                <textarea 
+                  id="projectDetails" 
+                  rows="2" 
+                  placeholder="Ex: Preciso de um sistema para automatizar o controle de agendamentos e notificações via WhatsApp..." 
+                  class="w-full bg-[#080c14] border border-white/10 rounded-xl px-4 py-2.5 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-cyan-400"
+                ></textarea>
+              </div>
+            </div>
+
+            <!-- Passo 4: Dados de Contato -->
+            <div>
+              <label class="block text-xs font-bold text-white mb-2">
+                <span class="inline-block w-5 h-5 rounded-full bg-cyan-400 text-black text-center text-[10px] font-extrabold leading-5 mr-1">5</span>
+                Seus dados para retorno:
+              </label>
+              
+              <div class="grid sm:grid-cols-3 gap-3">
+                <input type="text" id="clientName" placeholder="Seu nome completo" required class="w-full bg-[#080c14] border border-white/10 rounded-xl px-4 py-3 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-cyan-400">
+                <input type="email" id="clientEmail" placeholder="Seu melhor e-mail" required class="w-full bg-[#080c14] border border-white/10 rounded-xl px-4 py-3 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-cyan-400">
+                <input type="tel" id="clientPhone" placeholder="WhatsApp: (XX) 9XXXX-XXXX" required class="w-full bg-[#080c14] border border-white/10 rounded-xl px-4 py-3 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-cyan-400">
+              </div>
+            </div>
+
+            <!-- Resumo e Ações de Envio -->
+            <div class="pt-4 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4">
+              <div class="flex flex-wrap items-center gap-3 w-full sm:w-auto">
+                <button type="button" id="btnSendWhatsapp" class="btn-brand px-6 py-3.5 rounded-xl font-extrabold text-sm flex items-center justify-center gap-2 flex-1 sm:flex-none">
+                  <i class="fab fa-whatsapp text-lg"></i>
+                  <span>Enviar Briefing no WhatsApp</span>
+                </button>
+
+                <button type="button" id="btnSendEmail" class="btn-outline px-5 py-3.5 rounded-xl font-bold text-xs flex items-center justify-center gap-2">
+                  <i class="fas fa-envelope text-sm"></i>
+                  <span>Enviar por E-mail</span>
+                </button>
+
+                <button type="button" id="btnCopyBriefing" class="btn-outline px-4 py-3.5 rounded-xl font-bold text-xs flex items-center justify-center gap-2">
+                  <i class="fas fa-copy text-sm"></i>
+                  <span>Copiar Resumo</span>
+                </button>
+              </div>
+
+              <p class="text-[11px] text-slate-400 font-mono">
+                🔒 Seus dados são confidenciais e utilizados exclusivamente para sua estimativa.
+              </p>
+            </div>
+
+          </form>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         9. SEÇÃO: CONTATO DIRETO
+         ========================================================================= -->
+    <section class="py-20 border-b border-white/5 bg-[#080c14]" id="contato">
+      <div class="max-w-7xl mx-auto px-5 lg:px-8">
+        <div class="glass-card rounded-3xl p-8 sm:p-12 flex flex-col md:flex-row items-center justify-between gap-8 border-cyan-500/20">
+          
+          <div class="max-w-xl">
+            <span class="text-xs font-mono font-bold text-cyan-400 uppercase tracking-widest block mb-2">// Contato &amp; Atendimento</span>
+            <h2 class="text-2xl sm:text-3xl font-extrabold font-display text-white">Prefere bater um papo direto?</h2>
+            <p class="text-slate-300 text-sm mt-2 leading-relaxed">
+              Estou sempre à disposição para discutir novos desafios técnicos, contratos de consultoria PJ e orçamentos operacionais.
+            </p>
+          </div>
+
+          <div class="flex flex-wrap gap-4 w-full md:w-auto">
+            <a href="https://wa.me/5511986531134?text=Ol%C3%A1%20Roviro%2C%20gostaria%20de%20conversar%20sobre%20um%20projeto." target="_blank" rel="noopener noreferrer" class="btn-brand px-6 py-3.5 rounded-xl text-xs font-extrabold inline-flex items-center gap-2">
+              <i class="fab fa-whatsapp text-base"></i>
+              <span>(11) 98653-1134</span>
+            </a>
+
+            <a href="mailto:roviro221@gmail.com" class="btn-outline px-6 py-3.5 rounded-xl text-xs font-bold inline-flex items-center gap-2">
+              <i class="fas fa-envelope text-sm"></i>
+              <span>roviro221@gmail.com</span>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================================
+       10. RODAPÉ INSTITUCIONAL
+       ========================================================================= -->
+  <footer class="py-12 bg-[#05080e] border-t border-white/5 text-xs text-slate-400">
+    <div class="max-w-7xl mx-auto px-5 lg:px-8">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+        
+        <div class="flex items-center gap-3">
+          <div class="w-8 h-8 rounded-lg bg-gradient-to-tr from-cyan-500 to-indigo-600 text-white flex items-center justify-center font-extrabold text-sm">
+            R
+          </div>
+          <div>
+            <span class="text-white font-bold tracking-wider">ROVIRO DEV &amp; ARCH</span>
+            <span class="text-slate-500 font-mono text-[10px] ml-2">© 2026 Jeferson Roviro. Todos os direitos reservados.</span>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap items-center gap-6 text-[11px] font-mono">
+          <a href="https://elite96.roviro.com.br" target="_blank" rel="noopener noreferrer" class="hover:text-white transition">Elite 96</a>
+          <a href="https://jessica.roviro.com.br" target="_blank" rel="noopener noreferrer" class="hover:text-white transition">Jéssica Psicologia</a>
+          <a href="https://api.roviro.com.br" target="_blank" rel="noopener noreferrer" class="hover:text-white transition">API Gateway</a>
+          <a href="#inicio" class="text-cyan-400 hover:underline">Voltar ao topo &uarr;</a>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botão Flutuante do WhatsApp -->
+  <a href="https://wa.me/5511986531134?text=Ol%C3%A1%20Roviro%2C%20vim%20pelo%20portf%C3%B3lio%20e%20gostaria%20de%20conversar." target="_blank" rel="noopener noreferrer" id="floatingWhatsapp" class="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full bg-[#25D366] text-white flex items-center justify-center shadow-xl hover:scale-110 transition-transform" aria-label="Falar com Roviro no WhatsApp">
+    <i class="fab fa-whatsapp text-2xl"></i>
+  </a>
+
+  <!-- Toast Notification -->
+  <div id="toastNotification" class="fixed bottom-24 right-6 z-50 bg-[#0e1626] border border-cyan-500/50 text-white text-xs px-4 py-3 rounded-xl shadow-2xl opacity-0 transition-opacity pointer-events-none" role="status" aria-live="polite"></div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
