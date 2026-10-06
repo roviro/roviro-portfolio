@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // --- Seleção de Tipo de Projeto (Único) ---
   const projectTypeCards = document.querySelectorAll('#projectTypeGrid .option-card');
-  let selectedProjectType = 'Sistema de Gestão Interna (ERP / Operacional)';
+  let selectedProjectType = 'Diagnóstico Operacional Gratuito (Sessão de 30 min)';
 
   projectTypeCards.forEach(card => {
     card.addEventListener('click', () => {
