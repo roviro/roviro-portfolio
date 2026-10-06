@@ -348,34 +348,49 @@
 
         <div class="grid md:grid-cols-3 gap-6">
           
-          <div class="glass-card rounded-2xl p-6 border-cyan-500/20">
-            <div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 grid place-items-center mb-4">
-              <i class="fas fa-layer-group text-lg"></i>
+          <div class="glass-card rounded-2xl p-6 border-cyan-500/20 flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 grid place-items-center mb-4">
+                <i class="fas fa-bolt-lightning text-lg"></i>
+              </div>
+              <h3 class="text-lg font-bold text-white mb-2">Sistemas Rápidos &amp; Alta Estabilidade</h3>
+              <p class="text-xs text-slate-300 leading-relaxed">
+                Aplicações corporativas desenhadas para sua operação fluir sem lentidão e sem travamentos. Telas limpas, processos descomplicados e zero risco de dados duplicados ou perdidos.
+              </p>
             </div>
-            <h3 class="text-lg font-bold text-white mb-2">Full-Stack de Ponta a Ponta</h3>
-            <p class="text-xs text-slate-300 leading-relaxed">
-              Domínio completo de arquitetura: modelagem relacional robusta em PostgreSQL, caches rápidos com Redis, APIs escaláveis em Node.js e interfaces modernas em React e TypeScript.
-            </p>
+            <div class="mt-4 pt-3 border-t border-white/5 text-[11px] font-mono text-cyan-400 font-bold">
+              ✓ Menos retrabalho para sua equipe
+            </div>
           </div>
 
-          <div class="glass-card rounded-2xl p-6 border-indigo-500/20">
-            <div class="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/30 text-indigo-400 grid place-items-center mb-4">
-              <i class="fab fa-whatsapp text-lg"></i>
+          <div class="glass-card rounded-2xl p-6 border-emerald-500/20 flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 grid place-items-center mb-4">
+                <i class="fab fa-whatsapp text-lg"></i>
+              </div>
+              <h3 class="text-lg font-bold text-white mb-2">Automações no WhatsApp</h3>
+              <p class="text-xs text-slate-300 leading-relaxed">
+                Elimine o tempo gasto digitando mensagens manuais. Automatize confirmações de horário, lembretes de faturas com PIX e alertas operacionais 24 horas por dia.
+              </p>
             </div>
-            <h3 class="text-lg font-bold text-white mb-2">Automações &amp; WhatsApp</h3>
-            <p class="text-xs text-slate-300 leading-relaxed">
-              Especialista em integrar inteligência de mensageria com WhatsApp (Evolution API, Webhooks). Automatize notificações, confirmações de agendamento e alertas operacionais sem esforço manual.
-            </p>
+            <div class="mt-4 pt-3 border-t border-white/5 text-[11px] font-mono text-emerald-400 font-bold">
+              ✓ Resposta imediata ao seu cliente
+            </div>
           </div>
 
-          <div class="glass-card rounded-2xl p-6 border-blue-500/20">
-            <div class="w-12 h-12 rounded-xl bg-blue-500/10 border border-blue-500/30 text-blue-400 grid place-items-center mb-4">
-              <i class="fas fa-cloud text-lg"></i>
+          <div class="glass-card rounded-2xl p-6 border-indigo-500/20 flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/30 text-indigo-400 grid place-items-center mb-4">
+                <i class="fas fa-shield-halved text-lg"></i>
+              </div>
+              <h3 class="text-lg font-bold text-white mb-2">Proteção de Dados &amp; Nuvem Blindada</h3>
+              <p class="text-xs text-slate-300 leading-relaxed">
+                Toda a sua base corporativa protegida com backups automáticos diários, criptografia de ponta a ponta e níveis de permissão para cada colaborador acessar apenas o que deve.
+              </p>
             </div>
-            <h3 class="text-lg font-bold text-white mb-2">DevOps &amp; Cloud Segura</h3>
-            <p class="text-xs text-slate-300 leading-relaxed">
-              Implantação profissional em servidores Linux (AWS Lightsail, EC2, VPS), orquestração com Docker, Nginx como proxy reverso de alta performance, SSL automático e rotinas de backup.
-            </p>
+            <div class="mt-4 pt-3 border-t border-white/5 text-[11px] font-mono text-indigo-400 font-bold">
+              ✓ Continuidade e sigilo garantidos
+            </div>
           </div>
 
         </div>
@@ -656,9 +671,14 @@
                 <div class="w-12 h-12 rounded-2xl bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 grid place-items-center">
                   <i class="fas fa-scissors text-lg"></i>
                 </div>
-                <span class="px-2.5 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-300 font-mono text-[11px] font-bold">
-                  SaaS &amp; Agendamento
-                </span>
+                <div class="flex items-center gap-1.5">
+                  <span class="px-2 py-0.5 rounded-full bg-emerald-500/15 border border-emerald-500/30 text-emerald-300 font-mono text-[10px] font-bold">
+                    🔥 Mais Procurado
+                  </span>
+                  <span class="px-2 py-0.5 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-300 font-mono text-[10px] font-bold">
+                    SaaS
+                  </span>
+                </div>
               </div>
 
               <h3 class="text-2xl font-bold font-display text-white mb-2">
@@ -710,13 +730,16 @@
                 <span class="text-slate-500">Acesso livre sem login</span>
               </div>
               <div class="flex gap-2">
-                <a href="https://elite96.roviro.com.br" target="_blank" rel="noopener noreferrer" class="btn-brand px-4 py-2.5 rounded-xl text-center text-xs font-bold flex-1 inline-flex items-center justify-center gap-2">
+                <a href="https://elite96.roviro.com.br" target="_blank" rel="noopener noreferrer" class="btn-brand px-3.5 py-2.5 rounded-xl text-center text-xs font-bold flex-1 inline-flex items-center justify-center gap-1.5">
                   <span>Acessar Demo</span>
-                  <i class="fas fa-external-link-alt text-[10px]"></i>
+                  <i class="fas fa-external-link-alt text-[9px]"></i>
                 </a>
-                <a href="https://github.com/roviro/barberflow" target="_blank" rel="noopener noreferrer" class="px-3.5 py-2.5 rounded-xl bg-white/5 border border-white/10 hover:border-cyan-500/50 text-slate-300 hover:text-white text-center font-mono text-xs font-semibold inline-flex items-center justify-center gap-1.5 transition" title="Ver código no GitHub">
-                  <i class="fab fa-github"></i>
-                  <span class="hidden sm:inline">Código</span>
+                <a href="https://wa.me/5511986531134?text=Ol%C3%A1%20Jeferson%2C%20vi%20o%20sistema%20Elite%2096%20Barbershop%20no%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20uma%20solu%C3%A7%C3%A3o%20de%20agendamento%20similar%20para%20meu%20neg%C3%B3cio." target="_blank" rel="noopener noreferrer" class="btn-outline px-3 py-2.5 rounded-xl text-center text-xs font-bold inline-flex items-center justify-center gap-1.5 text-emerald-400 hover:text-emerald-300 border-emerald-500/30 hover:border-emerald-500/60" title="Pedir proposta desta solução no WhatsApp">
+                  <i class="fab fa-whatsapp"></i>
+                  <span>Quero Similar</span>
+                </a>
+                <a href="https://github.com/roviro/barberflow" target="_blank" rel="noopener noreferrer" class="p-2.5 rounded-xl bg-white/5 border border-white/10 hover:border-cyan-500/50 text-slate-400 hover:text-white transition grid place-items-center" title="Ver código no GitHub">
+                  <i class="fab fa-github text-xs"></i>
                 </a>
               </div>
             </div>
@@ -729,9 +752,14 @@
                 <div class="w-12 h-12 rounded-2xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 grid place-items-center">
                   <i class="fas fa-file-invoice-dollar text-lg"></i>
                 </div>
-                <span class="px-2.5 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-300 font-mono text-[11px] font-bold">
-                  Fintech &amp; Automação
-                </span>
+                <div class="flex items-center gap-1.5">
+                  <span class="px-2 py-0.5 rounded-full bg-emerald-500/15 border border-emerald-500/30 text-emerald-300 font-mono text-[10px] font-bold">
+                    🔥 Mais Procurado
+                  </span>
+                  <span class="px-2 py-0.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-300 font-mono text-[10px] font-bold">
+                    Fintech
+                  </span>
+                </div>
               </div>
 
               <h3 class="text-2xl font-bold font-display text-white mb-2">
@@ -783,13 +811,16 @@
                 <span class="text-slate-500">Dados simulados</span>
               </div>
               <div class="flex gap-2">
-                <a href="https://roviro.com.br/cobranca/" target="_blank" rel="noopener noreferrer" class="btn-brand px-4 py-2.5 rounded-xl text-center text-xs font-bold flex-1 inline-flex items-center justify-center gap-2">
+                <a href="https://roviro.com.br/cobranca/" target="_blank" rel="noopener noreferrer" class="btn-brand px-3.5 py-2.5 rounded-xl text-center text-xs font-bold flex-1 inline-flex items-center justify-center gap-1.5">
                   <span>Acessar Demo</span>
-                  <i class="fas fa-external-link-alt text-[10px]"></i>
+                  <i class="fas fa-external-link-alt text-[9px]"></i>
                 </a>
-                <a href="https://github.com/roviro/cobranca-automatizada" target="_blank" rel="noopener noreferrer" class="px-3.5 py-2.5 rounded-xl bg-white/5 border border-white/10 hover:border-emerald-500/50 text-slate-300 hover:text-white text-center font-mono text-xs font-semibold inline-flex items-center justify-center gap-1.5 transition" title="Ver código no GitHub">
-                  <i class="fab fa-github"></i>
-                  <span class="hidden sm:inline">Código</span>
+                <a href="https://wa.me/5511986531134?text=Ol%C3%A1%20Jeferson%2C%20vi%20o%20sistema%20de%20R%C3%A9gua%20de%20Cobran%C3%A7a%20no%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20uma%20automa%C3%A7%C3%A3o%20similar%20para%20minha%20empresa." target="_blank" rel="noopener noreferrer" class="btn-outline px-3 py-2.5 rounded-xl text-center text-xs font-bold inline-flex items-center justify-center gap-1.5 text-emerald-400 hover:text-emerald-300 border-emerald-500/30 hover:border-emerald-500/60" title="Pedir proposta desta solução no WhatsApp">
+                  <i class="fab fa-whatsapp"></i>
+                  <span>Quero Similar</span>
+                </a>
+                <a href="https://github.com/roviro/cobranca-automatizada" target="_blank" rel="noopener noreferrer" class="p-2.5 rounded-xl bg-white/5 border border-white/10 hover:border-emerald-500/50 text-slate-400 hover:text-white transition grid place-items-center" title="Ver código no GitHub">
+                  <i class="fab fa-github text-xs"></i>
                 </a>
               </div>
             </div>
@@ -802,9 +833,14 @@
                 <div class="w-12 h-12 rounded-2xl bg-amber-500/10 border border-amber-500/30 text-amber-400 grid place-items-center">
                   <i class="fas fa-utensils text-lg"></i>
                 </div>
-                <span class="px-2.5 py-1 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-300 font-mono text-[11px] font-bold">
-                  FoodTech &amp; Delivery Direto
-                </span>
+                <div class="flex items-center gap-1.5">
+                  <span class="px-2 py-0.5 rounded-full bg-emerald-500/15 border border-emerald-500/30 text-emerald-300 font-mono text-[10px] font-bold">
+                    🔥 Mais Procurado
+                  </span>
+                  <span class="px-2 py-0.5 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-300 font-mono text-[10px] font-bold">
+                    FoodTech
+                  </span>
+                </div>
               </div>
 
               <h3 class="text-2xl font-bold font-display text-white mb-2">
@@ -856,13 +892,16 @@
                 <span class="text-slate-500">Cardápio &amp; KDS</span>
               </div>
               <div class="flex gap-2">
-                <a href="https://roviro.com.br/cardapio/" target="_blank" rel="noopener noreferrer" class="btn-brand px-4 py-2.5 rounded-xl text-center text-xs font-bold flex-1 inline-flex items-center justify-center gap-2">
+                <a href="https://roviro.com.br/cardapio/" target="_blank" rel="noopener noreferrer" class="btn-brand px-3.5 py-2.5 rounded-xl text-center text-xs font-bold flex-1 inline-flex items-center justify-center gap-1.5">
                   <span>Acessar Demo</span>
-                  <i class="fas fa-external-link-alt text-[10px]"></i>
+                  <i class="fas fa-external-link-alt text-[9px]"></i>
                 </a>
-                <a href="https://github.com/roviro/cardapio-digital" target="_blank" rel="noopener noreferrer" class="px-3.5 py-2.5 rounded-xl bg-white/5 border border-white/10 hover:border-amber-500/50 text-slate-300 hover:text-white text-center font-mono text-xs font-semibold inline-flex items-center justify-center gap-1.5 transition" title="Ver código no GitHub">
-                  <i class="fab fa-github"></i>
-                  <span class="hidden sm:inline">Código</span>
+                <a href="https://wa.me/5511986531134?text=Ol%C3%A1%20Jeferson%2C%20vi%20o%20Card%C3%A1pio%20Digital%20e%20Delivery%20no%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20uma%20solu%C3%A7%C3%A3o%20similar%20para%20meu%20restaurante." target="_blank" rel="noopener noreferrer" class="btn-outline px-3 py-2.5 rounded-xl text-center text-xs font-bold inline-flex items-center justify-center gap-1.5 text-emerald-400 hover:text-emerald-300 border-emerald-500/30 hover:border-emerald-500/60" title="Pedir proposta desta solução no WhatsApp">
+                  <i class="fab fa-whatsapp"></i>
+                  <span>Quero Similar</span>
+                </a>
+                <a href="https://github.com/roviro/cardapio-digital" target="_blank" rel="noopener noreferrer" class="p-2.5 rounded-xl bg-white/5 border border-white/10 hover:border-amber-500/50 text-slate-400 hover:text-white transition grid place-items-center" title="Ver código no GitHub">
+                  <i class="fab fa-github text-xs"></i>
                 </a>
               </div>
             </div>
@@ -929,13 +968,16 @@
                 <span class="text-slate-500">Assinatura digital teste</span>
               </div>
               <div class="flex gap-2">
-                <a href="https://roviro.com.br/orcamento/" target="_blank" rel="noopener noreferrer" class="btn-brand px-4 py-2.5 rounded-xl text-center text-xs font-bold flex-1 inline-flex items-center justify-center gap-2">
+                <a href="https://roviro.com.br/orcamento/" target="_blank" rel="noopener noreferrer" class="btn-brand px-3.5 py-2.5 rounded-xl text-center text-xs font-bold flex-1 inline-flex items-center justify-center gap-1.5">
                   <span>Acessar Demo</span>
-                  <i class="fas fa-external-link-alt text-[10px]"></i>
+                  <i class="fas fa-external-link-alt text-[9px]"></i>
                 </a>
-                <a href="https://github.com/roviro/orcamento-express" target="_blank" rel="noopener noreferrer" class="px-3.5 py-2.5 rounded-xl bg-white/5 border border-white/10 hover:border-sky-500/50 text-slate-300 hover:text-white text-center font-mono text-xs font-semibold inline-flex items-center justify-center gap-1.5 transition" title="Ver código no GitHub">
-                  <i class="fab fa-github"></i>
-                  <span class="hidden sm:inline">Código</span>
+                <a href="https://wa.me/5511986531134?text=Ol%C3%A1%20Jeferson%2C%20vi%20o%20Or%C3%A7amento%20Express%20no%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20um%20gerador%20de%20propostas%20similar%20para%20minha%20empresa." target="_blank" rel="noopener noreferrer" class="btn-outline px-3 py-2.5 rounded-xl text-center text-xs font-bold inline-flex items-center justify-center gap-1.5 text-emerald-400 hover:text-emerald-300 border-emerald-500/30 hover:border-emerald-500/60" title="Pedir proposta desta solução no WhatsApp">
+                  <i class="fab fa-whatsapp"></i>
+                  <span>Quero Similar</span>
+                </a>
+                <a href="https://github.com/roviro/orcamento-express" target="_blank" rel="noopener noreferrer" class="p-2.5 rounded-xl bg-white/5 border border-white/10 hover:border-sky-500/50 text-slate-400 hover:text-white transition grid place-items-center" title="Ver código no GitHub">
+                  <i class="fab fa-github text-xs"></i>
                 </a>
               </div>
             </div>
@@ -1002,13 +1044,16 @@
                 <span class="text-slate-500">Torre B2B &amp; Kanban</span>
               </div>
               <div class="flex gap-2">
-                <a href="https://roviro.com.br/forca-vendas/" target="_blank" rel="noopener noreferrer" class="btn-brand px-4 py-2.5 rounded-xl text-center text-xs font-bold flex-1 inline-flex items-center justify-center gap-2">
+                <a href="https://roviro.com.br/forca-vendas/" target="_blank" rel="noopener noreferrer" class="btn-brand px-3.5 py-2.5 rounded-xl text-center text-xs font-bold flex-1 inline-flex items-center justify-center gap-1.5">
                   <span>Acessar Demo</span>
-                  <i class="fas fa-external-link-alt text-[10px]"></i>
+                  <i class="fas fa-external-link-alt text-[9px]"></i>
                 </a>
-                <a href="https://github.com/roviro/forca-de-vendas" target="_blank" rel="noopener noreferrer" class="px-3.5 py-2.5 rounded-xl bg-white/5 border border-white/10 hover:border-blue-500/50 text-slate-300 hover:text-white text-center font-mono text-xs font-semibold inline-flex items-center justify-center gap-1.5 transition" title="Ver código no GitHub">
-                  <i class="fab fa-github"></i>
-                  <span class="hidden sm:inline">Código</span>
+                <a href="https://wa.me/5511986531134?text=Ol%C3%A1%20Jeferson%2C%20vi%20o%20sistema%20de%20For%C3%A7a%20de%20Vendas%20B2B%20e%20Log%C3%ADstica%20no%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20uma%20solu%C3%A7%C3%A3o%20similar%20para%20minha%20empresa." target="_blank" rel="noopener noreferrer" class="btn-outline px-3 py-2.5 rounded-xl text-center text-xs font-bold inline-flex items-center justify-center gap-1.5 text-emerald-400 hover:text-emerald-300 border-emerald-500/30 hover:border-emerald-500/60" title="Pedir proposta desta solução no WhatsApp">
+                  <i class="fab fa-whatsapp"></i>
+                  <span>Quero Similar</span>
+                </a>
+                <a href="https://github.com/roviro/forca-de-vendas" target="_blank" rel="noopener noreferrer" class="p-2.5 rounded-xl bg-white/5 border border-white/10 hover:border-blue-500/50 text-slate-400 hover:text-white transition grid place-items-center" title="Ver código no GitHub">
+                  <i class="fab fa-github text-xs"></i>
                 </a>
               </div>
             </div>
@@ -1075,13 +1120,16 @@
                 <span class="text-slate-500">Gateway em Produção</span>
               </div>
               <div class="flex gap-2">
-                <a href="https://api.roviro.com.br" target="_blank" rel="noopener noreferrer" class="btn-brand px-4 py-2.5 rounded-xl text-center text-xs font-bold flex-1 inline-flex items-center justify-center gap-2">
+                <a href="https://api.roviro.com.br" target="_blank" rel="noopener noreferrer" class="btn-brand px-3.5 py-2.5 rounded-xl text-center text-xs font-bold flex-1 inline-flex items-center justify-center gap-1.5">
                   <span>Visualizar Gateway</span>
-                  <i class="fas fa-external-link-alt text-[10px]"></i>
+                  <i class="fas fa-external-link-alt text-[9px]"></i>
                 </a>
-                <span class="px-3.5 py-2.5 rounded-xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-300 text-center font-mono text-[11px] font-bold inline-flex items-center justify-center gap-1.5">
-                  <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
-                  Ativo
+                <a href="https://wa.me/5511986531134?text=Ol%C3%A1%20Jeferson%2C%20vi%20o%20Gateway%20de%20API%20do%20WhatsApp%20no%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20uma%20infraestrutura%20de%20mensageria%20similar%20para%20minha%20empresa." target="_blank" rel="noopener noreferrer" class="btn-outline px-3 py-2.5 rounded-xl text-center text-xs font-bold inline-flex items-center justify-center gap-1.5 text-emerald-400 hover:text-emerald-300 border-emerald-500/30 hover:border-emerald-500/60" title="Pedir proposta desta solução no WhatsApp">
+                  <i class="fab fa-whatsapp"></i>
+                  <span>Quero Similar</span>
+                </a>
+                <span class="p-2.5 rounded-xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-300 text-center font-mono text-[11px] font-bold inline-flex items-center justify-center gap-1" title="Infraestrutura Ativa 24/7">
+                  <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
                 </span>
               </div>
             </div>
@@ -1108,11 +1156,31 @@
               </p>
 
               <!-- Tags Técnicas -->
-              <div class="flex flex-wrap gap-1.5 mb-5 font-mono text-[11px]">
+              <div class="flex flex-wrap gap-1.5 mb-4 font-mono text-[11px]">
                 <span class="px-2 py-0.5 rounded bg-black/40 border border-white/10 text-slate-300">Next-gen UI</span>
                 <span class="px-2 py-0.5 rounded bg-black/40 border border-white/10 text-slate-300">SEO Técnico</span>
                 <span class="px-2 py-0.5 rounded bg-black/40 border border-white/10 text-slate-300">Alta Conversão</span>
                 <span class="px-2 py-0.5 rounded bg-black/40 border border-white/10 text-slate-300">Score 100 CWV</span>
+              </div>
+
+              <!-- Depoimento Real do Cliente -->
+              <div class="bg-gradient-to-r from-purple-950/40 via-slate-900/60 to-purple-950/30 rounded-2xl p-4 border border-purple-500/25 mb-4">
+                <div class="flex items-center justify-between gap-2 mb-2">
+                  <div class="flex items-center gap-1.5 text-purple-300 text-xs font-bold">
+                    <i class="fas fa-quote-left text-purple-400"></i>
+                    <span>Depoimento do Cliente</span>
+                  </div>
+                  <div class="flex text-amber-400 text-[10px] gap-0.5">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                  </div>
+                </div>
+                <p class="text-slate-200 italic leading-relaxed text-xs">
+                  "Antes do portal, passávamos horas no WhatsApp tirando dúvidas e alinhando horários. A plataforma profissionalizou nossa captação, trouxe pacientes qualificados e gerou autoridade imediata."
+                </p>
+                <div class="mt-2.5 pt-2 border-t border-purple-500/15 flex items-center justify-between text-[11px] font-mono text-purple-300">
+                  <span class="font-bold text-white">— Jéssica Roviro</span>
+                  <span class="text-emerald-400 font-semibold text-[10px]">CRP Ativo • Consultório Online</span>
+                </div>
               </div>
 
               <!-- Accordion de Detalhes Técnicos -->
@@ -1148,13 +1216,16 @@
                 <span class="text-slate-500">Atendimento Ativo</span>
               </div>
               <div class="flex gap-2">
-                <a href="https://jessica.roviro.com.br" target="_blank" rel="noopener noreferrer" class="btn-brand px-4 py-2.5 rounded-xl text-center text-xs font-bold flex-1 inline-flex items-center justify-center gap-2">
+                <a href="https://jessica.roviro.com.br" target="_blank" rel="noopener noreferrer" class="btn-brand px-3.5 py-2.5 rounded-xl text-center text-xs font-bold flex-1 inline-flex items-center justify-center gap-1.5">
                   <span>Visualizar Portal</span>
-                  <i class="fas fa-external-link-alt text-[10px]"></i>
+                  <i class="fas fa-external-link-alt text-[9px]"></i>
                 </a>
-                <a href="https://github.com/roviro/jessica-roviro-psicologia" target="_blank" rel="noopener noreferrer" class="px-3.5 py-2.5 rounded-xl bg-white/5 border border-white/10 hover:border-cyan-500/50 text-slate-300 hover:text-white text-center font-mono text-xs font-semibold inline-flex items-center justify-center gap-1.5 transition" title="Ver código no GitHub">
-                  <i class="fab fa-github"></i>
-                  <span class="hidden sm:inline">Código</span>
+                <a href="https://wa.me/5511986531134?text=Ol%C3%A1%20Jeferson%2C%20vi%20o%20portal%20da%20J%C3%A9ssica%20Roviro%20Psicologia%20no%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20um%20site%20institucional%20de%20alta%20convers%C3%A3o%20para%20meu%20neg%C3%B3cio." target="_blank" rel="noopener noreferrer" class="btn-outline px-3 py-2.5 rounded-xl text-center text-xs font-bold inline-flex items-center justify-center gap-1.5 text-emerald-400 hover:text-emerald-300 border-emerald-500/30 hover:border-emerald-500/60" title="Pedir proposta desta solução no WhatsApp">
+                  <i class="fab fa-whatsapp"></i>
+                  <span>Quero Similar</span>
+                </a>
+                <a href="https://github.com/roviro/jessica-roviro-psicologia" target="_blank" rel="noopener noreferrer" class="p-2.5 rounded-xl bg-white/5 border border-white/10 hover:border-purple-500/50 text-slate-400 hover:text-white transition grid place-items-center" title="Ver código no GitHub">
+                  <i class="fab fa-github text-xs"></i>
                 </a>
               </div>
             </div>
@@ -1231,6 +1302,27 @@
             </p>
           </div>
 
+        </div>
+
+        <!-- Previsibilidade de Prazos & Entregas em Ciclos Curtos -->
+        <div class="mt-12 rounded-2xl bg-cyan-950/30 border border-cyan-500/20 p-5 sm:p-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div class="flex items-center gap-3.5 text-left">
+            <div class="w-10 h-10 rounded-xl bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 grid place-items-center shrink-0 text-base">
+              <i class="fas fa-stopwatch-20"></i>
+            </div>
+            <div>
+              <div class="text-sm font-bold text-white flex items-center gap-2">
+                <span>Entregas Rápidas em Ciclos de 7 a 21 Dias Úteis</span>
+                <span class="px-2 py-0.5 rounded bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-[10px] font-mono">Sem Meses no Escuro</span>
+              </div>
+              <p class="text-xs text-slate-300 mt-0.5">
+                A maioria das nossas automações e módulos de sistemas sob medida são entregues e homologados para sua equipe operar em poucas semanas.
+              </p>
+            </div>
+          </div>
+          <a href="#orcamento" class="btn-outline px-4 py-2.5 rounded-xl text-xs font-bold text-cyan-300 hover:text-white shrink-0">
+            Estimar Prazo da Minha Ideia &rarr;
+          </a>
         </div>
 
       </div>
