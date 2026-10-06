@@ -191,26 +191,52 @@
           <!-- Coluna Direita: Card Prominente com a FOTO DE JEFERSON ROVIRO + Painel de Operações -->
           <div class="w-full">
             <div class="hero-panel-frame max-w-md mx-auto">
-              <div class="glass-card rounded-3xl p-6 sm:p-7 border border-white/10 shadow-2xl relative bg-[#0e1626]/90 backdrop-blur-xl space-y-6">
+              <div class="glass-card rounded-3xl p-6 sm:p-7 border border-white/10 shadow-2xl relative bg-[#0e1626]/90 backdrop-blur-xl space-y-5">
                 
+                <!-- VÍDEO DE APRESENTAÇÃO DO ENGENHEIRO (JEFERSON ROVIRO) -->
+                <div class="space-y-2">
+                  <div class="flex items-center justify-between text-xs font-mono">
+                    <span class="inline-flex items-center gap-1.5 text-cyan-300 font-semibold">
+                      <i class="fas fa-circle-play text-cyan-400"></i>
+                      <span>Vídeo de Apresentação</span>
+                    </span>
+                    <span class="px-2 py-0.5 rounded-full bg-cyan-950/90 border border-cyan-500/30 text-[10px] text-cyan-300 font-bold">
+                      10s • Direto ao ponto
+                    </span>
+                  </div>
+
+                  <div class="relative rounded-2xl overflow-hidden border border-cyan-500/30 bg-black/80 shadow-2xl aspect-video group">
+                    <video 
+                      id="heroVideo"
+                      controls
+                      playsinline
+                      preload="metadata"
+                      poster="./assets/video-poster.jpg"
+                      class="w-full h-full object-cover rounded-2xl"
+                    >
+                      <source src="./assets/apresentacao-roviro.mp4" type="video/mp4">
+                      Seu navegador não suporta reprodução de vídeo.
+                    </video>
+                  </div>
+                </div>
+
                 <!-- DESTAQUE DA FOTO DO ENGENHEIRO (JEFERSON ROVIRO) -->
-                <div class="flex items-center gap-4 pb-5 border-b border-white/5">
+                <div class="flex items-center gap-4 pt-1 pb-4 border-b border-white/5">
                   <div class="relative shrink-0">
                     <div class="absolute -inset-1 rounded-2xl bg-gradient-to-tr from-cyan-500 to-indigo-600 blur opacity-60"></div>
                     <img 
                       src="./assets/roviro-profile.png" 
                       alt="Foto de Jeferson Roviro" 
-                      class="relative w-20 h-20 sm:w-22 sm:h-22 rounded-2xl object-cover ring-2 ring-cyan-400/60 shadow-xl"
-                      width="88"
-                      height="88"
-                      fetchpriority="high"
+                      class="relative w-16 h-16 sm:w-18 sm:h-18 rounded-2xl object-cover ring-2 ring-cyan-400/60 shadow-xl"
+                      width="72"
+                      height="72"
                     >
                   </div>
                   <div>
-                    <h2 class="text-xl sm:text-2xl font-black font-display text-white leading-tight">Jeferson Roviro</h2>
+                    <h2 class="text-lg sm:text-xl font-black font-display text-white leading-tight">Jeferson Roviro</h2>
                     <p class="text-xs font-mono text-cyan-400 font-semibold mt-0.5">Software Engineer &amp; Architect</p>
                     <p class="text-[11px] text-slate-400">São Paulo, Brasil • Remoto Global</p>
-                    <div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-emerald-950/80 border border-emerald-500/40 text-[10px] text-emerald-300 font-mono font-bold mt-2">
+                    <div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-emerald-950/80 border border-emerald-500/40 text-[10px] text-emerald-300 font-mono font-bold mt-1.5">
                       <span class="w-2 h-2 rounded-full bg-emerald-400 pulse-dot"></span>
                       Disponível para Projetos
                     </div>
